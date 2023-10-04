@@ -1,15 +1,20 @@
 {
   "name": "@xavisoft/critical-section",
   "version": "0.1.0",
-  "description": "",
+  "description": "A Javascript library for dealing with critical sections in your applications to avoid race conditions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --ui tdd --exit --timeout=5000"
   },
   "author": "Xavisoft Digital",
   "license": "ISC",
   "dependencies": {
     "queue-fifo": "^0.2.6",
     "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "casual": "^1.6.2",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
   }
 }
