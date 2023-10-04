@@ -1,0 +1,8 @@
+
+- allow locks to have timeouts
+	- get rejected if it waits for too long
+	- get released if it locks for too long
+- statistics showing which locks actually gets locked
+- identify threads holding locks so that we can detect deadlocks
+- allow passing more than one key so that we collect keys
+- sort keys by alphabetical order if possible, this automatically avoids deadlocks
